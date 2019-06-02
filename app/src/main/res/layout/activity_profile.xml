@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--we will use Appbar layout to hold toolbar and tablayout-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="E-News"
+            app:titleMarginStart="150dp"
+            android:background="#c2161e"
+            app:titleTextColor="#fff">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="109dp"
+            android:id="@+id/nametv" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nametv"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="E-mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nametv"
+            android:layout_alignStart="@+id/nametv"
+            android:layout_marginTop="45dp"
+            android:id="@+id/emailtv" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:id="@+id/textView6"
+            android:layout_alignTop="@+id/emailtv" />
+
+        <TextView
+            android:text="Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailtv"
+            android:layout_marginTop="56dp"
+            android:id="@+id/locationtv"
+            android:layout_alignStart="@+id/emailtv" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/locationtv"
+            android:layout_alignStart="@+id/textView6"
+            android:id="@+id/textView9" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

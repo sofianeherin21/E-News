@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--we will use Appbar layout to hold toolbar and tablayout-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="E-News"
+            app:titleMarginStart="150dp"
+            android:background="#c2161e"
+            app:titleTextColor="#fff">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/settings_tv" />
+
+        <TextView
+            android:text="Help"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_tv"
+            android:layout_alignStart="@+id/settings_tv"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Help_tv" />
+
+        <TextView
+            android:text="About"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Help_tv"
+            android:layout_marginTop="30dp"
+            android:layout_alignStart="@+id/settings_tv"
+            android:id="@+id/about_tv" />
+
+        <TextView
+            android:text="E-News Version
+            1.01.01- 09/02/17 12:04
+            CopyRight 2017 E-News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_tv"
+            android:layout_alignEnd="@+id/Help_tv"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/settings_tv"
+            android:id="@+id/abouttext_tv" />
+
+        <TextView
+            android:text="Contact us"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abouttext_tv"
+            android:layout_alignStart="@+id/about_tv"
+            android:layout_marginTop="50dp"
+            android:id="@+id/contact_tv" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_tv"
+            android:layout_alignStart="@+id/settings_tv"
+            android:text="email us at enews@gmail.com"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

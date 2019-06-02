@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/prothomalo"
+            android:title="প্রথম আলো" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/jugantor"
+            android:title="যুগান্তর" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/kalerkontho"
+            android:title="কালের কন্ঠ" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/amardesh"
+            android:title="আমার দেশ" />
+    </group>
+
+    
+
+</menu>

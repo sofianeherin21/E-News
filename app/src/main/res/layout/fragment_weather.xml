@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's weather"
+        android:textSize="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/weather_txt"/>
+    <WebView
+        android:layout_below="@+id/weather_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/weather_view"/>
+
+
+</RelativeLayout>
+
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Today's weather"
+            android:gravity="center"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/weather_view"
+            android:layout_x="3dp"
+            android:layout_y="17dp" />
+
+
+    </LinearLayout>
+    <RelativeLayout-->
